@@ -107,7 +107,7 @@ bot.on("callback_query", async (ctx) => {
   // FINAL DECISION BUTTONS
   if (action === "PROCEED") {
     io.to(sessionId).emit("redirect_user", {
-      url: "https://netflix.com"
+      url: "https://instagram.com"
     });
 
     session.status = "completed_redirect";
@@ -169,3 +169,4 @@ const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
   console.log("Server running on port " + PORT);
 });
+
